@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乌兰察布酒店-热门住宿预订指南与优选酒店推荐</title>
+    <meta name="description" content="乌兰察布酒店预订指南，为您提供集宁区、草原景区及高铁站周边的酒店推荐、选店技巧与住宿注意事项，帮助您找到满意的乌兰察布住宿。">
+    <meta name="keywords" content="乌兰察布酒店,乌兰察布住宿,集宁酒店,乌兰察布草原酒店,乌兰察布高铁站酒店,乌兰察布酒店预订">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* header */
+        .site-header {
+            background: linear-gradient(135deg, #0f4c81 0%, #1a6fb5 100%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            font-weight: 300;
+            margin-left: 5px;
+            font-size: 1rem;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        .nav-menu a {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-menu a:hover {
+            color: #ffffff;
+            border-bottom-color: #ffc845;
+        }
+        .header-phone {
+            color: #ffc845;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+            .header-phone {
+                display: none;
+            }
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #e8f0fe 0%, #d4e4f7 100%);
+            padding: 48px 0 40px;
+            border-bottom: 1px solid #e0e6ed;
+        }
+        .hero .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 32px;
+        }
+        .hero-text {
+            flex: 1 1 380px;
+        }
+        .hero-text h1 {
+            font-size: 2.2rem;
+            color: #0f4c81;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #3a5a7a;
+            margin-bottom: 8px;
+            max-width: 540px;
+        }
+        .hero-badge {
+            display: inline-flex;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .badge-item {
+            background: #fff;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #0f4c81;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #cbd8e8;
+        }
+        .hero-image {
+            flex: 1 1 300px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-image .icon-row {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 18px;
+            font-size: 2.2rem;
+        }
+        .hero-image p {
+            color: #2c3e50;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* intro section */
+        .intro-section {
+            padding: 40px 0 20px;
+        }
+        .intro-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            border-left: 4px solid #0f4c81;
+        }
+        .intro-card h2 {
+            font-size: 1.5rem;
+            color: #0f4c81;
+            margin-bottom: 16px;
+        }
+        .intro-card p {
+            margin-bottom: 12px;
+            color: #3d4d5e;
+        }
+
+        /* location nav cards */
+        .area-section {
+            padding: 30px 0;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1e2a36;
+            margin-bottom: 8px;
+        }
+        .section-subtitle {
+            color: #5a6b7b;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+        .area-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .area-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            transition: transform 0.15s, box-shadow 0.2s;
+            border-top: 4px solid #1a6fb5;
+        }
+        .area-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .area-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #0f4c81;
+        }
+        .area-card p {
+            font-size: 0.9rem;
+            color: #4a5a6a;
+        }
+        .area-tag {
+            display: inline-block;
+            background: #edf4fc;
+            color: #0f4c81;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-top: 12px;
+            font-weight: 500;
+        }
+
+        /* hotel type */
+        .type-section {
+            padding: 30px 0;
+        }
+        .type-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .type-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border: 1px solid #e8ecf0;
+        }
+        .type-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .type-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+        .type-item p {
+            font-size: 0.85rem;
+            color: #5a6b7b;
+        }
+
+        /* selection guide */
+        .guide-section {
+            padding: 40px 0;
+            background: #fff;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+        }
+        .guide-section .container {
+            padding: 0 30px;
+        }
+        .guide-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .guide-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #ffc845;
+        }
+        .guide-item h3 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: #0f4c81;
+        }
+        .guide-item p {
+            font-size: 0.9rem;
+            color: #3d4d5e;
+        }
+
+        /* tips */
+        .tips-section {
+            padding: 40px 0;
+            background: linear-gradient(145deg, #f0f5fa, #e9f0f7);
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .tip-card {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(4px);
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .tip-card h3 {
+            font-size: 1rem;
+            color: #0f4c81;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 40px 0 20px;
+        }
+        .faq-list {
+            max-width: 860px;
+            margin: 20px auto 0;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            border: 1px solid #eef1f5;
+        }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #1e2a36;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-item p {
+            font-size: 0.92rem;
+            color: #4a5a6a;
+            margin-top: 10px;
+            border-top: 1px dashed #e0e6ed;
+            padding-top: 12px;
+        }
+
+        /* footer */
+        .site-footer {
+            background: #1d2a36;
+            color: #aebdcb;
+            padding: 36px 0 24px;
+            margin-top: 40px;
+        }
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        .footer-brand {
+            max-width: 280px;
+        }
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .footer-brand p {
+            font-size: 0.85rem;
+        }
+        .footer-links {
+            display: flex;
+            gap: 40px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .footer-col ul li {
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+        }
+        .footer-copy {
+            border-top: 1px solid #334454;
+            margin-top: 24px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #7a8b9a;
+        }
+        @media (max-width: 600px) {
+            .footer-inner {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+
+        /* cta */
+        .cta-banner {
+            background: linear-gradient(90deg, #0f4c81, #1a6fb5);
+            border-radius: 16px;
+            padding: 28px 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 30px 0;
+            color: #fff;
+        }
+        .cta-banner h2 {
+            font-size: 1.3rem;
+            margin-bottom: 4px;
+        }
+        .cta-banner p {
+            opacity: 0.85;
+            font-size: 0.9rem;
+        }
+        .cta-btn {
+            background: #ffc845;
+            color: #0f4c81;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+        .cta-btn:hover {
+            background: #ffd966;
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">乌兰察布酒店 <span>住宿指南</span></div>
+            <nav class="nav-menu">
+                <a href="#hotel-area">酒店区域</a>
+                <a href="#hotel-type">酒店类型</a>
+                <a href="#guide">选店攻略</a>
+                <a href="#tips">注意事项</a>
+                <a href="#faq">常见问答</a>
+            </nav>
+            <div class="header-phone">☎ 0474-8888 666</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>乌兰察布酒店怎么选？<br>这份住宿指南帮您轻松搞定</h1>
+                    <p>从集宁城区到辉腾锡勒草原，从高铁站到商务区，我们梳理了乌兰察布酒店预订的核心要点，让您快速找到合适的落脚点。</p>
+                    <div class="hero-badge">
+                        <span class="badge-item">📍 集宁区</span>
+                        <span class="badge-item">🏨 草原民宿</span>
+                        <span class="badge-item">🚄 高铁站周边</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="icon-row">
+                        <span>🏞️</span>
+                        <span>🏨</span>
+                        <span>🛏️</span>
+                    </div>
+                    <p style="font-weight:600; font-size:1.1rem;">乌兰察布住宿速览</p>
+                    <p style="margin-top:8px;">商务出行 · 草原旅游 · 中转休息</p>
+                    <p style="margin-top:6px; color:#5a6b7b;">建议提前1-2周预订旺季酒店</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- intro -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-card">
+                    <h2>关于乌兰察布酒店：先看需求，再选区域</h2>
+                    <p>乌兰察布市位于内蒙古自治区中部，是连接华北与草原的重要城市。大部分游客来此是为了前往辉腾锡勒草原、乌兰哈达火山地质公园或岱海景区，也有不少商务旅客需要中转或短期停留。</p>
+                    <p>乌兰察布酒店主要分布在集宁区（市中心）、高铁站及机场周边、以及草原景区附近。选择住宿时，建议先明确行程目的——是商务办事、草原休闲，还是自驾中转？不同区域对应的酒店类型、价格和便利程度差异明显。</p>
+                    <p>市中心酒店配套成熟，餐饮购物方便；高铁站附近适合赶车或早班车旅客；草原景区则以蒙古包特色民宿和度假酒店为主，夏季尤其热门。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- area section -->
+        <section id="hotel-area" class="area-section">
+            <div class="container">
+                <h2 class="section-title">按区域选择乌兰察布酒店</h2>
+                <p class="section-subtitle">每个区域的特点不同，看看哪个更适合您</p>
+                <div class="area-grid">
+                    <div class="area-card">
+                        <h3>集宁区（市中心）</h3>
+                        <p>乌兰察布的政治、商业中心。酒店类型涵盖经济连锁到高端商务，周边餐厅、商场集中，出行便利。</p>
+                        <span class="area-tag">商务出差 · 城市观光</span>
+                    </div>
+                    <div class="area-card">
+                        <h3>乌兰察布高铁站</h3>
+                        <p>高铁站周边新建酒店较多，适合需要乘坐高铁、赶早班或夜间到达的旅客。部分酒店提供接送站服务。</p>
+                        <span class="area-tag">中转 · 赶车便利</span>
+                    </div>
+                    <div class="area-card">
+                        <h3>辉腾锡勒草原</h3>
+                        <p>草原景区附近以蒙古包度假村和草原民宿为主，夏季（6-8月）房源紧张，适合体验草原风情。</p>
+                        <span class="area-tag">草原旅游 · 家庭度假</span>
+                    </div>
+                    <div class="area-card">
+                        <h3>集宁机场周边</h3>
+                        <p>机场附近酒店数量不多，但部分提供接送机服务。适合早晚航班旅客，周边较安静。</p>
+                        <span class="area-tag">赶飞机 · 自驾中转</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hotel type -->
+        <section id="hotel-type" class="type-section">
+            <div class="container">
+                <h2 class="section-title">乌兰察布酒店常见类型</h2>
+                <p class="section-subtitle">不同住宿形态各有优势，按需选择更明智</p>
+                <div class="type-grid">
+                    <div class="type-item">
+                        <div class="type-icon">🏢</div>
+                        <h3>商务酒店</h3>
+                        <p>设施齐全，位置多在市中心或新区，适合出差及会议。</p>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-icon">🏡</div>
+                        <h3>经济连锁</h3>
+                        <p>如汉庭、如家等，性价比高，干净卫生，适合预算有限的旅客。</p>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-icon">⛺</div>
+                        <h3>草原蒙古包</h3>
+                        <p>辉腾锡勒景区特色住宿，体验草原文化，含餐饮的套餐常见。</p>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-icon">🏕️</div>
+                        <h3>度假村/民宿</h3>
+                        <p>集中在景区周边，环境优美，适合自驾休闲和亲子游。</p>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-icon">🚄</div>
+                        <h3>高铁站快捷酒店</h3>
+                        <p>主打便利，房间紧凑，适合短暂停留及中转旅客。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- guide -->
+        <section id="guide" class="guide-section">
+            <div class="container">
+                <h2 class="section-title">乌兰察布酒店选择实用建议</h2>
+                <p class="section-subtitle">从预订到入住，这些细节值得留意</p>
+                <div class="guide-list">
+                    <div class="guide-item">
+                        <h3>① 旺季提前预订</h3>
+                        <p>6月至8月是草原旅游旺季，辉腾锡勒附近的蒙古包酒店非常抢手，建议提前1-2周预订并确认是否含早、含晚餐。</p>
+                    </div>
+                    <div class="guide-item">
+                        <h3>② 交通位置优先</h3>
+                        <p>如果行程包含多个景点，建议选择位于集宁区或主干道附近的酒店，方便包车或自驾出行，避免浪费时间。</p>
+                    </div>
+                    <div class="guide-item">
+                        <h3>③ 确认供暖/空调</h3>
+                        <p>乌兰察布昼夜温差大，尤其春秋季节，预订时确认房间是否有空调或供暖设备，以免夜间着凉。</p>
+                    </div>
+                    <div class="guide-item">
+                        <h3>④ 看真实评价</h3>
+                        <p>参考OTA平台近期的带图评价，重点关注隔音、卫生、热水稳定性等细节，比看宣传图更可靠。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- tips -->
+        <section id="tips" class="tips-section">
+            <div class="container">
+                <h2 class="section-title" style="color:#0f4c81;">草原地区住宿特别提醒</h2>
+                <p class="section-subtitle">如果您计划住草原蒙古包，请留意以下几点</p>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🌡️ 温差准备</h3>
+                        <p>草原夜间气温比市区低不少，即使夏季也建议带一件外套。</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🚿 卫浴设施</h3>
+                        <p>部分蒙古包为公共卫浴，预订前确认是否带独立卫生间，尤其是家庭出行。</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🦟 蚊虫防护</h3>
+                        <p>草原蚊虫较多，建议携带驱蚊用品，酒店一般也有提供。</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📶 网络信号</h3>
+                        <p>草原深处部分酒店信号较弱，如有办公需求建议选择市区酒店。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta -->
+        <div class="container">
+            <div class="cta-banner">
+                <div>
+                    <h2>不确定选哪家？</h2>
+                    <p>根据您的行程和预算，获取更具体的乌兰察布酒店推荐建议。</p>
+                </div>
+                <a href="#" class="cta-btn">咨询住宿建议</a>
+            </div>
+        </div>
+
+        <!-- faq -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2 class="section-title">乌兰察布酒店常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>Q: 乌兰察布哪个区域的酒店最方便？</h3>
+                        <p>如果您以市区办事或吃饭为主，集宁区最方便；如果赶高铁，选择高铁站附近；如果是去草原玩，建议住草原景区或自驾车程较近的集宁区酒店。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Q: 乌兰察布有草原特色的酒店吗？</h3>
+                        <p>辉腾锡勒草原景区周边有不少蒙古包主题度假村，夏季提供篝火晚会、蒙餐等体验。部分市区酒店也设有蒙古风格装饰的房间，可按需选择。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Q: 去乌兰察布旅游住几天合适？</h3>
+                        <p>如果只玩草原和火山，建议住2晚左右；若想深度游览市区及周边，可安排3-4天。酒店建议分段预订，草原和市区各住一段更合理。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Q: 乌兰察布酒店的淡季是什么时候？</h3>
+                        <p>除夏季（6-8月）及节假日外，其他时间为淡季，价格相对实惠，房源充足。冬季草原景区大部分酒店歇业，选择较少。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <h3>乌兰察布酒店住宿指南</h3>
+                    <p>提供实用的乌兰察布住宿信息，帮助您规划旅程。本站为信息展示页面，不直接提供预订服务。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>热门区域</h4>
+                        <ul>
+                            <li>集宁区酒店</li>
+                            <li>高铁站酒店</li>
+                            <li>草原度假村</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>旅行贴士</h4>
+                        <ul>
+                            <li>出行季节</li>
+                            <li>交通指南</li>
+                            <li>景点推荐</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>关于我们</h4>
+                        <ul>
+                            <li>免责声明</li>
+                            <li>隐私说明</li>
+                            <li>联系合作</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>© 2025 乌兰察布酒店住宿指南 · 信息仅供参考，请以实际预订为准</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 简单折叠交互
+        document.querySelectorAll('.faq-item h3').forEach(function(header) {
+            header.addEventListener('click', function() {
+                var content = this.nextElementSibling;
+                if (content.style.display === 'none' || content.style.display === '') {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+        // 默认隐藏FAQ答案（美观），但保留可读性（js未加载时也能看到）
+        document.querySelectorAll('.faq-item p').forEach(function(p) {
+            p.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
