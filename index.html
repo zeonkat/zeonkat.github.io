@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>97电影-经典港片回顾与怀旧电影推荐指南</title>
+    <meta name="description" content="97电影专题网站，带你重温1997年前后的经典香港电影，深度回顾黄金时代佳作，提供怀旧电影推荐、幕后故事与观影指南。">
+    <meta name="keywords" content="97电影,1997年电影,香港电影,经典港片,怀旧电影,老电影推荐,港片黄金时代">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background: #f2ede4;
+            color: #2b2b2b;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== 页眉与导航 ===== */
+        .site-header {
+            background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%);
+            padding: 18px 0;
+            border-bottom: 3px solid #c8a24b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            font-size: 28px;
+            margin-right: 10px;
+            background: #c8a24b;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #1c1c1c;
+            font-weight: 700;
+        }
+
+        .site-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #f0e6d2;
+            letter-spacing: 1px;
+        }
+
+        .site-name span {
+            color: #c8a24b;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+        }
+
+        .main-nav a {
+            color: #d4cfc5;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .main-nav a:hover {
+            color: #c8a24b;
+            border-bottom-color: #c8a24b;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #f0e6d2;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* ===== 首屏 Hero ===== */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDQwTDQwIDBaIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWEyMCIvPjwvc3ZnPg==');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 0 70px;
+            text-align: center;
+            color: #f7f3ea;
+        }
+
+        .hero-title {
+            font-size: 44px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #e0d8ca;
+            letter-spacing: 1px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: #c8a24b;
+            color: #1c1c1c;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* ===== 通用栏目 ===== */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-alt {
+            background: #f8f5ef;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-head h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1c1c1c;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+        }
+
+        .section-head h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #c8a24b;
+        }
+
+        .section-head p {
+            color: #6b6b6b;
+            margin-top: 12px;
+            font-size: 15px;
+        }
+
+        .section-title-left {
+            text-align: left;
+        }
+
+        .section-title-left h2::after {
+            left: 0;
+            transform: none;
+        }
+
+        /* ===== 电影卡片网格 ===== */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .movie-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+        }
+
+        .movie-poster {
+            height: 200px;
+            background: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #c8a24b;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .movie-poster::after {
+            content: "1997";
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            opacity: 0.4;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .movie-info {
+            padding: 18px 18px 20px;
+        }
+
+        .movie-info h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1c1c1c;
+        }
+
+        .movie-meta {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .movie-desc {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .movie-type {
+            display: inline-block;
+            background: #f0e6d2;
+            color: #8a6d2f;
+            font-size: 12px;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* ===== 双栏布局 ===== */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #d8d0c0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 15px;
+        }
+
+        .feature-list li::before {
+            content: "★";
+            color: #c8a24b;
+            flex-shrink: 0;
+        }
+
+        /* ===== 时间线 ===== */
+        .timeline-wrap {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            padding: 16px 0;
+            border-left: 3px solid #e5dccd;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: 24px;
+            width: 13px;
+            height: 13px;
+            background: #c8a24b;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px #c8a24b;
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: #c8a24b;
+            font-size: 18px;
+            min-width: 60px;
+        }
+
+        .timeline-content p {
+            font-size: 15px;
+            color: #444;
+        }
+
+        /* ===== 榜单列表 ===== */
+        .rank-list {
+            counter-reset: rank;
+        }
+
+        .rank-item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: #fff;
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: background 0.2s;
+        }
+
+        .rank-item:hover {
+            background: #faf6ef;
+        }
+
+        .rank-num {
+            width: 36px;
+            height: 36px;
+            background: #1c1c1c;
+            color: #c8a24b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .rank-item:nth-child(1) .rank-num {
+            background: #c8a24b;
+            color: #1c1c1c;
+        }
+
+        .rank-item:nth-child(2) .rank-num {
+            background: #c8a24b;
+            color: #1c1c1c;
+        }
+
+        .rank-item:nth-child(3) .rank-num {
+            background: #c8a24b;
+            color: #1c1c1c;
+        }
+
+        .rank-info {
+            flex: 1;
+        }
+
+        .rank-info h3 {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .rank-info p {
+            font-size: 13px;
+            color: #888;
+        }
+
+        .rank-score {
+            font-size: 20px;
+            font-weight: 700;
+            color: #c8a24b;
+        }
+
+        /* ===== 幕后故事 ===== */
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .story-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 28px;
+            border-top: 4px solid #c8a24b;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .story-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .story-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* ===== 观影指南 ===== */
+        .guide-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .guide-box h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #1c1c1c;
+            border-left: 5px solid #c8a24b;
+            padding-left: 15px;
+        }
+
+        .guide-box p {
+            margin-bottom: 12px;
+            color: #444;
+            font-size: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1c1c1c;
+            color: #f0e6d2;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #c8a24b;
+            color: #1c1c1c;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border: none;
+            width: 100%;
+            text-align: left;
+            color: #1c1c1c;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 24px;
+            color: #c8a24b;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s;
+            color: #555;
+            font-size: 15px;
+            background: #faf7f2;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 24px 22px;
+            max-height: 300px;
+        }
+
+        /* ===== 页脚 ===== */
+        .site-footer {
+            background: #1c1c1c;
+            color: #a5a5a5;
+            padding: 45px 0 30px;
+            margin-top: 40px;
+        }
+
+        .footer-inner {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #8a8a8a;
+        }
+
+        .footer-links h4 {
+            color: #f0e6d2;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #8a8a8a;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #c8a24b;
+        }
+
+        .footer-copy {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* ===== 响应式 ===== */
+        @media (max-width: 992px) {
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .site-header {
+                padding: 12px 0;
+            }
+
+            .main-nav {
+                display: none;
+                width: 100%;
+                order: 3;
+                margin-top: 12px;
+            }
+
+            .main-nav.open {
+                display: block;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .main-nav a {
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px solid #333;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 30px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .section-head h2 {
+                font-size: 26px;
+            }
+
+            .movie-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .timeline-year {
+                min-width: auto;
+            }
+
+            .rank-item {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .rank-score {
+                margin-left: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+
+            .movie-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+
+            .movie-info {
+                padding: 12px;
+            }
+
+            .movie-info h3 {
+                font-size: 15px;
+            }
+
+            .movie-desc {
+                font-size: 13px;
+            }
+
+            .guide-box {
+                padding: 22px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">97</div>
+            <div class="site-name">97<span>电影</span>馆</div>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#classics">经典推荐</a></li>
+                <li><a href="#timeline">时代印记</a></li>
+                <li><a href="#rank">影迷榜单</a></li>
+                <li><a href="#stories">幕后故事</a></li>
+                <li><a href="#guide">观影指南</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1 class="hero-title">重温97电影 · 致敬香港电影黄金时代</h1>
+            <p class="hero-subtitle">1997年，是香港电影史上极具分量的一年。这一年诞生的作品，承载着一代人的光影记忆，也见证了一个时代的辉煌与变迁。</p>
+            <span class="hero-tag">🎬 经典永不褪色</span>
+        </div>
+    </section>
+
+    <!-- 经典推荐 -->
+    <section class="section" id="classics">
+        <div class="container">
+            <div class="section-head">
+                <h2>97年经典电影推荐</h2>
+                <p>那些年我们反复观看的银幕佳作，至今仍值得细细品味</p>
+            </div>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <div class="movie-poster" style="background: linear-gradient(135deg, #3a1a1a, #1a1a2e);">🎭</div>
+                    <div class="movie-info">
+                        <h3>《97家有喜事》</h3>
+                        <div class="movie-meta">喜剧 / 家庭 · 1997</div>
+                        <p class="movie-desc">延续经典贺岁喜剧风格，明星云集，笑料百出，是许多观众每年春节必看的开心果。</p>
+                        <span class="movie-type">合家欢</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background: linear-gradient(135deg, #1a1a3e, #0a0a1a);">🔫</div>
+                    <div class="movie-info">
+                        <h3>《高度戒备》</h3>
+                        <div class="movie-meta">动作 / 犯罪 · 1997</div>
+                        <p class="movie-desc">林岭东执导的警匪经典，刘青云与吴镇宇的精彩对决，紧张刺激的叙事节奏堪称类型片标杆。</p>
+                        <span class="movie-type">警匪</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background: linear-gradient(135deg, #2e1a3e, #1a0a2e);">💔</div>
+                    <div class="movie-info">
+                        <h3>《半生缘》</h3>
+                        <div class="movie-meta">爱情 / 文艺 · 1997</div>
+                        <p class="movie-desc">许鞍华执导，改编自张爱玲同名小说。黎明、吴倩莲演绎乱世中的爱而不得，克制而动人。</p>
+                        <span class="movie-type">文艺</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background: linear-gradient(135deg, #3e2a1a, #1a1a1a);">🐉</div>
+                    <div class="movie-info">
+                        <h3>《黄飞鸿之西域雄狮》</h3>
+                        <div class="movie-meta">动作 / 武侠 · 1997</div>
+                        <p class="movie-desc">李连杰版黄飞鸿系列又一力作，将功夫带到美国西部，东西方文化碰撞别有趣味。</p>
+                        <span class="movie-type">武侠</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background: linear-gradient(135deg, #1a2e1a, #0a1a0a);">👻</div>
+                    <div class="movie-info">
+                        <h3>《阴阳路》</h3>
+                        <div class="movie-meta">恐怖 / 惊悚 · 1997</div>
+                        <p class="movie-desc">经典恐怖系列开山之作，分段式叙事讲述都市怪谈，是不少观众的童年阴影与珍藏记忆。</p>
+                        <span class="movie-type">惊悚</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster" style="background: linear-gradient(135deg, #1a2a3e, #0a1a2e);">🎬</div>
+                    <div class="movie-info">
+                        <h3>《一个字头的诞生》</h3>
+                        <div class="movie-meta">黑色幽默 / 犯罪 · 1997</div>
+                        <p class="movie-desc">银河映像早期代表作，双线叙事，荒诞与宿命交织，刘青云贡献了极具张力的表演。</p>
+                        <span class="movie-type">黑色幽默</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 时代背景与双栏 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <div class="section-head section-title-left" style="margin-bottom: 20px;">
+                        <h2>为什么“97电影”如此特别？</h2>
+                    </div>
+                    <p style="margin-bottom: 16px; font-size: 15px; color: #444;">1997年对于香港而言是历史性的转折点。经历了多年的发展与积淀，香港电影在这一年前后呈现出独特的创作生态。创作者们既在探索新的表达空间，也在回望与总结属于香港的故事。</p>
+                    <p style="margin-bottom: 16px; font-size: 15px; color: #444;">这一年的电影产量虽然较巅峰期有所回落，但作品的类型丰富度与艺术水准依然保持高位。无论是商业大片还是文艺小品，都流露出一种独特的时代情绪——既是对过去的告别，也是对未来的张望。</p>
+                    <ul class="feature-list">
+                        <li>类型多元：警匪、喜剧、武侠、文艺、恐怖全面开花</li>
+                        <li>演员阵容强大：周星驰、李连杰、刘青云、吴镇宇等正值巅峰</li>
+                        <li>导演风格成熟：徐克、杜琪峰、许鞍华、林岭东等名导佳作频出</li>
+                        <li>时代转型印记：作品中隐含着对身份与未来的思考</li>
+                        <li>影迷情怀加成：承载着70、80后一代人的青春记忆</li>
+                    </ul>
+                </div>
+                <div class="timeline-wrap">
+                    <h3 style="font-size: 20px; margin-bottom: 20px; color: #1c1c1c;">📅 97电影大事记</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1997.01</div>
+                        <div class="timeline-content"><p>贺岁档《97家有喜事》上映，延续春节合家欢传统，票房与口碑双丰收。</p></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1997.04</div>
+                        <div class="timeline-content"><p>香港电影金像奖颁奖，多部97年前后作品获得提名，竞争激烈。</p></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1997.07</div>
+                        <div class="timeline-content"><p>香港回归祖国，电影界迎来新的创作语境，题材选择更加多元。</p></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1997.09</div>
+                        <div class="timeline-content"><p>《一个字头的诞生》上映，银河映像风格初现，成为黑色电影代表作。</p></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1997.12</div>
+                        <div class="timeline-content"><p>多部重量级影片抢滩圣诞档与新年档，为这一年画上圆满句号。</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 影迷榜单 -->
+    <section class="section" id="rank">
+        <div class="container">
+            <div class="section-head">
+                <h2>影迷心中的97佳片榜</h2>
+                <p>综合影迷口碑与影响力整理的推荐片单，欢迎补充你的心头好</p>
+            </div>
+            <div class="two-col" style="grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div class="rank-list">
+                    <div class="rank-item">
+                        <div class="rank-num">1</div>
+                        <div class="rank-info">
+                            <h3>《97家有喜事》</h3>
+                            <p>喜剧 · 周星驰</p>
+                        </div>
+                        <div class="rank-score">9.2</div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-num">2</div>
+                        <div class="rank-info">
+                            <h3>《一个字头的诞生》</h3>
+                            <p>黑色幽默 · 刘青云</p>
+                        </div>
+                        <div class="rank-score">9.0</div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-num">3</div>
+                        <div class="rank-info">
+                            <h3>《高度戒备》</h3>
+                            <p>动作 · 吴镇宇</p>
+                        </div>
+                        <div class="rank-score">8.8</div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-num">4</div>
+                        <div class="rank-info">
+                            <h3>《半生缘》</h3>
+                            <p>文艺 · 黎明</p>
+                        </div>
+                        <div class="rank-score">8.7</div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-num">5</div>
+                        <div class="rank-info">
+                            <h3>《黄飞鸿之西域雄狮》</h3>
+                            <p>武侠 · 李连杰</p>
+                        </div>
+                        <div class="rank-score">8.5</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="guide-box" style="margin-bottom: 20px;">
+                        <h3>榜单说明</h3>
+                        <p>以上评分与排序综合参考影迷社区讨论、专业影评及豆瓣/时光网等平台的口碑反馈，旨在为初次接触97电影的朋友提供一个入门参考。每个人心中都有自己的最佳，这份榜单并非绝对标准。</p>
+                    </div>
+                    <div class="guide-box">
+                        <h3>如何开启你的97电影之旅？</h3>
+                        <p>如果你是第一次接触这一年的电影，建议从喜剧和动作片入手，更容易进入状态。先看《97家有喜事》感受轻松氛围，再尝试《高度戒备》体验紧张叙事，逐步扩展到文艺与实验性作品。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 幕后故事 -->
+    <section class="section section-alt" id="stories">
+        <div class="container">
+            <div class="section-head">
+                <h2>光影背后的故事</h2>
+                <p>了解这些背景，再看电影时会有更深的感触</p>
+            </div>
+            <div class="story-grid">
+                <div class="story-card">
+                    <h3>🎥 银河映像的崛起</h3>
+                    <p>1996年成立的银河映像，在97年前后迅速确立风格。杜琪峰、韦家辉等核心人物以强烈的作者意识，为香港黑色电影注入全新生命力。《一个字头的诞生》正是这一风格的集中体现。</p>
+                </div>
+                <div class="story-card">
+                    <h3>✍️ 文学改编的韵味</h3>
+                    <p>《半生缘》将张爱玲的苍凉笔触转化为影像语言。许鞍华导演以细腻的手法还原了原著中那种欲说还休的情感张力，成为华语文学改编电影的典范之作。</p>
+                </div>
+                <div class="story-card">
+                    <h3>🎭 演员的黄金年代</h3>
+                    <p>97年前后，一批优秀演员正处于创作力最旺盛的阶段。周星驰的喜剧节奏、刘青云的多面演技、吴镇宇的邪魅气质，都在这一年留下了令人难忘的银幕形象。</p>
+                </div>
+                <div class="story-card">
+                    <h3>🏆 类型片的边界探索</h3>
+                    <p>那一年，香港电影人在传统类型中寻求突破。警匪片加入更多心理博弈，喜剧片融入社会观察，武侠片尝试跨文化叙事，这些探索深刻影响了后来的创作走向。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 观影指南 -->
+    <section class="section" id="guide">
+        <div class="container">
+            <div class="guide-box" style="max-width: 900px; margin: 0 auto;">
+                <h3 style="font-size: 24px; text-align: center; border-left: none; border-bottom: 2px solid #c8a24b; padding-bottom: 12px; margin-bottom: 24px;">🎬 97电影观影指南</h3>
+                <p><strong>画质说明：</strong>由于年代较久，部分电影目前仅有DVD或修复版资源。建议优先选择蓝光修复版或官方数字修复版本，能获得更好的观影体验。</p>
+                <p><strong>观看顺序建议：</strong>若想按类型探索，可遵循以下路径：喜剧入门（《97家有喜事》）→ 动作进阶（《高度戒备》《黄飞鸿之西域雄狮》）→ 文艺提升（《半生缘》）→ 作者电影（《一个字头的诞生》）。</p>
+                <p><strong>搭配观看：</strong>可以结合1996年与1998年的同类型作品一起看，对比不同年份的风格变化，更能体会97年的独特位置。</p>
+                <p><strong>氛围营造：</strong>观看时不妨泡一杯茶，关掉弹幕与评论，让自己完全沉浸在90年代的影像氛围中，感受那个时代的呼吸。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <div class="section-head">
+                <h2>关于97电影的常见问题</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">“97电影”具体指什么？</button>
+                    <div class="faq-answer">广义上指1997年上映或制作的所有电影作品。在影迷语境中，“97电影”更常特指1997年前后香港出品的影片，因为这一年对香港意义特殊，电影创作也呈现出独特的时代印记。</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">为什么1997年的香港电影值得关注？</button>
+                    <div class="faq-answer">1997年正值香港回归祖国，社会文化环境发生深刻变化。电影作为时代镜像，忠实地记录了这一转型期的焦虑、期待与探索。同时，一批优秀电影人正处于创作黄金期，作品质量整体很高。</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">有哪些渠道可以观看到97年的电影？</button>
+                    <div class="faq-answer">部分影片可在国内主流视频平台找到正版资源，尤其是知名度较高的作品。少数冷门影片可能需要通过DVD收藏或影展放映观看。建议关注香港电影资料馆或各大电影节的经典重映单元。</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">如何向年轻朋友推荐97电影？</button>
+                    <div class="faq-answer">可以从他们感兴趣的类型入手。喜欢喜剧的推荐《97家有喜事》，喜欢动作片的推荐《高度戒备》，喜欢文艺片的推荐《半生缘》。先建立好感，再引导他们了解时代背景，会更容易产生共鸣。</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">97年还有哪些遗珠作品值得挖掘？</button>
+                    <div class="faq-answer">除了热门影片外，一些小成本制作和独立电影同样值得关注，比如《香港制造》等作品。它们可能没有大明星阵容，却以真诚的视角记录了那个时代的青年状态，别具价值。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="site-name" style="font-size: 20px;">97<span style="color: #c8a24b;">电影</span>馆</div>
+                <p>一个专注于回顾1997年经典电影的非营利性爱好者网站。我们相信光影有温度，经典永流传。</p>
+            </div>
+            <div class="footer-links">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#classics">经典推荐</a></li>
+                    <li><a href="#timeline">时代印记</a></li>
+                    <li><a href="#rank">影迷榜单</a></li>
+                    <li><a href="#stories">幕后故事</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>更多内容</h4>
+                <ul>
+                    <li><a href="#guide">观影指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">友情链接</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            © 2025 97电影馆 · 仅供学习交流 · 尊重版权 · 怀旧致敬
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 移动端导航切换
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    if (navToggle && mainNav) {
+        navToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('open');
+        });
+    }
+
+    // FAQ 折叠交互
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', function() {
+                const isActive = item.classList.contains('active');
+                // 关闭所有项
+                faqItems.forEach(i => i.classList.remove('active'));
+                // 如果之前未激活，则打开当前项
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+
+    // 平滑滚动（可选增强）
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // 移动端点击后关闭菜单
+                if (mainNav.classList.contains('open')) {
+                    mainNav.classList.remove('open');
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+                      </html>
